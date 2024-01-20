@@ -1,4 +1,4 @@
-package kazakov;
+package tutorial;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletInputStream;
