@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33b395c4-76d8-48bf-a009-2b0b4388375f" name="Changes" comment="Journal Catalogue servlets intro">
+    <list default="true" id="33b395c4-76d8-48bf-a009-2b0b4388375f" name="Changes" comment="Journal Catalogue refactoring">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/database/DatabaseAbstraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/database/JournalDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/entity/Journal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/servlets/AddJournalToCatalogueServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +43,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "settings.editor.selected.configurable": "terminal"
   },
@@ -93,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705747626946</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Journal Catalogue refactoring">
+      <created>1705749960676</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705749960676</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,13 +125,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Journal Catalogue servlets intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Journal Catalogue servlets intro" />
+    <MESSAGE value="Journal Catalogue refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Journal Catalogue refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/kazakov/ReadTextServlet.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/tutorial/ReadTextServlet.java</url>
           <line>34</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
