@@ -14,7 +14,7 @@ public class JournalDao {
     // delete/deleteBy/.. - удаление
     // могут быть кастомные методы которые нужны для внутреннего процееса (например работа с актуальностью объектов)
     //
-    DatabaseAbstraction db = new DatabaseAbstraction();
+    private DatabaseAbstraction db = new DatabaseAbstraction();
 
     public void create(Journal journal){
         db.journals.put(journal.getName() + journal.getIssueNumber(), journal);

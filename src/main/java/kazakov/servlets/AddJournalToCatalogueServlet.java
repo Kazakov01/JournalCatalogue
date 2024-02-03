@@ -27,11 +27,11 @@ public class AddJournalToCatalogueServlet extends HttpServlet {
         BufferedReader rd = req.getReader();
         StringBuilder sb = new StringBuilder();
 
-        if (journalDao.contains(req.getParameter("journal"))) {
+        String name = rd.readLine();
+        int issueNum = Integer.parseInt(rd.readLine());
+        if (journalDao.contains(name+issueNum)) {
             resp.sendError(400,"This journal ia already saved");
         } else {
-            String name = rd.readLine();
-            int issueNum = Integer.valueOf(rd.readLine());
             LocalDate publishDate = LocalDate.parse(rd.readLine());
             journalDao.create(new Journal(name,issueNum,publishDate));
         }
