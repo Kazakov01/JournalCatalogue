@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33b395c4-76d8-48bf-a009-2b0b4388375f" name="Changes" comment="Journal Catalogue refactoring">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/database/DatabaseAbstraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/database/JournalDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/entity/Journal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/servlets/AddJournalToCatalogueServlet.java" afterDir="false" />
+    <list default="true" id="33b395c4-76d8-48bf-a009-2b0b4388375f" name="Changes" comment="hw 03.02.24 Journal Catalogue small changes + curl problems inited">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kazakov/servlets/GetJournalListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/journal.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kazakov/database/DatabaseAbstraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kazakov/database/DatabaseAbstraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kazakov/database/JournalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kazakov/database/JournalDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kazakov/servlets/AddJournalToCatalogueServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kazakov/servlets/AddJournalToCatalogueServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;,
+      &quot;TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn jetty:run-war" />
@@ -109,7 +108,28 @@
       <option name="project" value="LOCAL" />
       <updated>1705749960676</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cw 20.01.24 Journal Catalogue first servlets done">
+      <created>1705762386350</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705762386350</updated>
+    </task>
+    <task id="LOCAL-00004" summary="hw 02.02.24 Journal Catalogue second attempt">
+      <created>1706824297168</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706824297168</updated>
+    </task>
+    <task id="LOCAL-00005" summary="hw 03.02.24 Journal Catalogue small changes + curl problems inited">
+      <created>1706962573346</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706962573346</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,7 +146,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Journal Catalogue servlets intro" />
     <MESSAGE value="Journal Catalogue refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Journal Catalogue refactoring" />
+    <MESSAGE value="cw 20.01.24 Journal Catalogue first servlets done" />
+    <MESSAGE value="hw 02.02.24 Journal Catalogue second attempt" />
+    <MESSAGE value="hw 03.02.24 Journal Catalogue small changes + curl problems inited" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw 03.02.24 Journal Catalogue small changes + curl problems inited" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -136,13 +159,38 @@
           <line>34</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tutorial/ReadTextServlet.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tutorial/ReadTextServlet.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tutorial/ReadTextServlet.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tutorial/ReadTextServlet.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tutorial/ReadTextServlet.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/kazakov/servlets/GetJournalListServlet.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="MavenRunConfiguration">
-        <watch expression="sb" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

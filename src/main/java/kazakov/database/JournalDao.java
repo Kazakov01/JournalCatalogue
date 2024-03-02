@@ -3,7 +3,9 @@ package kazakov.database;
 import jdk.jshell.execution.Util;
 import kazakov.entity.Journal;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class JournalDao {
@@ -14,7 +16,7 @@ public class JournalDao {
     // delete/deleteBy/.. - удаление
     // могут быть кастомные методы которые нужны для внутреннего процееса (например работа с актуальностью объектов)
     //
-    private DatabaseAbstraction db = new DatabaseAbstraction();
+    private DatabaseAbstraction db = DatabaseAbstraction.getSingleton();
 
     public void create(Journal journal){
         db.journals.put(journal.getName() + journal.getIssueNumber(), journal);
@@ -29,6 +31,10 @@ public class JournalDao {
             return null;
         }
         return db.journals.get(nameAndIssue);
+    }
+
+    public List<Journal> getAll() {
+        return new ArrayList<>(db.journals.values());
     }
 
 }
